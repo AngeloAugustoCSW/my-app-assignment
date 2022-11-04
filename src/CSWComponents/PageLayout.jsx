@@ -19,22 +19,27 @@ export const PageLayout = () => {
       <Typography variant="h5">Main Menu</Typography>
       <List>
         <listItem>
-          <ListItemButton component={Link} to="/">
+          <ListItemButton component="a" to="/">
             <ListItemText primary={"Home"} />
           </ListItemButton>
         </listItem>
         <listItem>
-          <ListItemButton component={Link} to="/sobre">
+          <ListItemButton component="a" to="about">
             <ListItemText primary={"About"} />
           </ListItemButton>
         </listItem>
         <listItem>
-          <ListItemButton component="a" href="News">
+          <ListItemButton component="a" href="album">
+            <ListItemText primary={"Album"} />
+          </ListItemButton>
+        </listItem>
+        <listItem>
+          <ListItemButton component="a" href="news">
             <ListItemText primary={"News"} />
           </ListItemButton>
         </listItem>
         <listItem>
-          <ListItemButton component="a" href="Counter">
+          <ListItemButton component="a" href="contact">
             <ListItemText primary={"Contact"} />
           </ListItemButton>
         </listItem>
